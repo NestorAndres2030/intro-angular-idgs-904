@@ -5,6 +5,7 @@ import { setupCounter } from './counter.ts'
 import './intro-ts/01-tipos-bas.ts'
 import './intro-ts/02-ob-interFac-arre.ts'
 import './intro-ts/03-funciones.ts'
+import './intro-ts/04-desectructura-objeto.ts'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
