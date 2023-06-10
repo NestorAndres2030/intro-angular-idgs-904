@@ -6,6 +6,11 @@ import './intro-ts/01-tipos-bas.ts'
 import './intro-ts/02-ob-interFac-arre.ts'
 import './intro-ts/03-funciones.ts'
 import './intro-ts/04-desectructura-objeto.ts'
+import './intro-ts/05-clases.ts'
+import './intro-ts/06-herencia.ts'
+import './intro-ts/07-genericos.ts'
+
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -26,3 +31,20 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 console.log("Hola Mundo ")
+
+
+//Modificador de Acceso
+
+
+
+
+
+
+
+
+
+
+
+
+
+
