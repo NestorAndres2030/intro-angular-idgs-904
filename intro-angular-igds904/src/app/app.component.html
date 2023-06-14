@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+
+    <p>Hola mundo</p>
+
+
+    <div>
+      {{title}}
+    </div>
+
+    <div>La suma de 2+2 es:{{2+3}}</div>
+    <div>El doble de 3 es {{duplivaValor(3)}}</div>
+    <h2>Alumno IDGS904</h2>
+    <div>
+      <b>Matricula</b> {{Alumnos.matricula}}
+    </div>
+    <div>
+      <b>Nombre</b> {{Alumnos.nombre}}
+    </div>
+    <div>
+      <b>Fecha:</b> {{Alumnos.fechaNacimiento | date}}
+    </div>
+    <div>
+      <b>Pago:</b> {{Alumnos.pagoIns|currency}}
+    </div>
+
+
+    <hr>
+    <app-escuela></app-escuela>
+    <hr>
+    <app-ivn></app-ivn>
+    <hr>
+    <app-iric></app-iric>
+  </div>
+</div>
+
+
+
+
+
+
+
+
