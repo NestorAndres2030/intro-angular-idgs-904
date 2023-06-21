@@ -1,0 +1,69 @@
+<div class="card">
+    <div class="card-header">
+        Alumnos IRIC
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">Filtrar Por :  </div>
+                <div class="col-md-4">
+                  <input [(ngModel)]="listFilter" type="text" name="filter" class="form-control">
+                </div>
+  
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Filtro:{{listFilter}}</h3>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table" *ngIf="alumnosIric.length">
+                    <thead>
+                      <tr>
+                        <th ><button class="btn btn-primary" (click)="showImage()">
+                          {{muestraImg?'Ocultar ':'Muestra '}}Imagen
+                        </button></th>
+                        <th >Foto</th>
+                        <th >Matricula</th>
+                        <th >Nombre</th>
+                        <th >Edad</th>
+                        <th >Correo</th>
+                        <th >Pago</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let alumno of alumnosIric">
+  
+                        <td><img [src]="alumno.foto"
+                          [title]="alumno.nombre"
+                          [style.width.px]="imageWidth"
+                          [style.margin.px]="imageMargin"
+                          *ngIf="muestraImg"
+                          ></td>
+                        <td>{{alumno.matricula}}</td>
+                        <td>{{alumno.nombre}}</td>
+                        <td>{{alumno.edad}}</td>
+                        <td>{{alumno.correo}}</td>
+                        <td>{{alumno.pago}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
