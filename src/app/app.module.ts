@@ -14,6 +14,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatIconButton} from '@angular/material/Button';
 import { OperasModule } from './escuela/formularios/operas/operas.module';
+import { AlumnosFilterPipe } from './escuela/alumnos-filter.pipe';
+import { CalificacionAlumComponent } from './escuela/calificacion-alum/calificacion-alum.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { OperasModule } from './escuela/formularios/operas/operas.module';
     ivnComponent,
     IricComponent,
     MenuComponent,
-    SumarComponent
+    SumarComponent,
+    AlumnosFilterPipe,
+    CalificacionAlumComponent
 
   ],
   imports: [

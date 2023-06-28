@@ -21,17 +21,17 @@
                         <th ><button class="btn btn-primary" (click)="showImage()">
                           {{muestraImg?'Ocultar ':'Muestra '}}Imagen
                         </button></th>
-                        <th >Foto</th>
+                   
                         <th >Matricula</th>
                         <th >Nombre</th>
                         <th >Edad</th>
                         <th >Correo</th>
                         <th >Pago</th>
+                        <th >Calificacion</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr *ngFor="let alumno of alumnosIric">
-  
+                      <tr *ngFor="let alumno of alumnosIric |alumnosFilter:listFilter">
                         <td><img [src]="alumno.foto"
                           [title]="alumno.nombre"
                           [style.width.px]="imageWidth"
@@ -43,6 +43,9 @@
                         <td>{{alumno.edad}}</td>
                         <td>{{alumno.correo}}</td>
                         <td>{{alumno.pago}}</td>
+                        <td>{{alumno.calif}}</td>
+                        <td><app-calificacion-alum [califica]="alumno.calif"></app-calificacion-alum></td>
+                      
                       </tr>
                     </tbody>
                   </table>
