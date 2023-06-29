@@ -6,7 +6,7 @@ import { EscuelaComponent } from './escuela/escuela/escuela.components';
 import { ivnComponent } from './escuela/IVN/IVN.component';
 import { IricComponent } from './escuela/iric/iric.component';
 import { MenuComponent } from './escuela/menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SumarComponent } from './escuela/formularios/sumar/sumar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -16,6 +16,8 @@ import {MatIconButton} from '@angular/material/Button';
 import { OperasModule } from './escuela/formularios/operas/operas.module';
 import { AlumnosFilterPipe } from './escuela/alumnos-filter.pipe';
 import { CalificacionAlumComponent } from './escuela/calificacion-alum/calificacion-alum.component';
+import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
+import { ActivatedRoute } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { CalificacionAlumComponent } from './escuela/calificacion-alum/calificac
     MenuComponent,
     SumarComponent,
     AlumnosFilterPipe,
-    CalificacionAlumComponent
+    CalificacionAlumComponent,
+    AlumnoReactiveComponent
 
   ],
   imports: [
@@ -34,6 +37,7 @@ import { CalificacionAlumComponent } from './escuela/calificacion-alum/calificac
     BrowserAnimationsModule,
     MatInputModule,
     MatIconModule,
+    ReactiveFormsModule,
     OperasModule,
     FormsModule
     

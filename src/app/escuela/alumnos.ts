@@ -5,6 +5,6 @@ export interface alumnosIric{
     correo:string;
     pago:number;
     foto:string;
-    calif:number
+    calif:number;
 
   }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calificacion-alum',
@@ -6,12 +6,16 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./calificacion-alum.component.css']
 })
 export class CalificacionAlumComponent {
-  @Input()
-  califica!: number;
-  
-  starWidth!: number;
+  @Input() califica!: number;
 
-  ngOnChange(): void {
-    this.starWidth = this.califica * 76 / 10;
+  @Output() calificaClick:EventEmitter<string>=new EventEmitter();
+ 
+  starWidth!:number;
+
+  ngOnChanges(): void {
+    this.starWidth = this.califica*76/10;
+  }
+  onClik(){
+    this.calificaClick.emit(`${this.califica}`)
   }
 }
