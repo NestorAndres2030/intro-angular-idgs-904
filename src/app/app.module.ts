@@ -18,6 +18,7 @@ import { AlumnosFilterPipe } from './escuela/alumnos-filter.pipe';
 import { CalificacionAlumComponent } from './escuela/calificacion-alum/calificacion-alum.component';
 import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
 import { ActivatedRoute } from '@angular/router';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ActivatedRoute } from '@angular/router';
     MatIconModule,
     ReactiveFormsModule,
     OperasModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
     
   ],
   providers: [],
